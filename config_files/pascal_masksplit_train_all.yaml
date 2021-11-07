@@ -1,0 +1,42 @@
+DATA:
+  train_split: 0
+  sup_aug: True
+  query_aug: True
+  image_size: 400
+  use_all_classes: True
+  use_split_coco: False
+  train_name: pascal
+  test_name: default
+  test_split: default
+  train_list: lists/pascal/train_masksplit.txt
+  data_root:   # add path to data
+  val_list: lists/pascal/val.txt
+  workers: 4
+  vcrop_range: [-40,40]
+  vcrop_ignore_support: True
+  alternate: True
+  vsplit_prob: 1.0
+  hsplit_prob: 0.0
+  hsplit: False
+  vsplit: True
+  num_classes_val: 5
+
+TRAIN:
+  ckpt_path: checkpoints/
+  batch_size: 16
+  epochs: 100
+  strategy: "unsupervised_all"
+
+EVALUATION:
+  shot: 1
+  visualize: False
+  ckpt_used: ""
+
+MODEL:
+  arch: resnet
+  layers: 101
+  pretrained: True  # Means the backbone has been pre-trained
+  model_name: Masksplit
+
+DISTRIBUTED:
+  gpus: -1

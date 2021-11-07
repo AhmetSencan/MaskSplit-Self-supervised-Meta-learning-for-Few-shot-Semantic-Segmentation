@@ -1,0 +1,18 @@
+DATA:
+  train_name: pascal
+  test_name: default
+  train_split: 0
+  test_split: default
+  image_size: 400
+  use_split_coco: False
+  data_root:   # add path to data
+  val_list: lists/pascal/val.txt
+  workers: 4
+
+EVALUATION:
+  shot: 1
+  visualize: False
+  ckpt_used: ""  # add path to checkpoint
+
+DISTRIBUTED:
+  gpus: -1
