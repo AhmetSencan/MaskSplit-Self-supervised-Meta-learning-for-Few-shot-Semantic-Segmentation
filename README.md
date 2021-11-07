@@ -51,20 +51,20 @@ We also provide pretrained models, which are trained with our approach. These ca
 ## Training
 Before starting training there are some steps that should to be taken:
 - Assign model_path variable to the path of the pre-trained backbone in the resnet101 function, which is located inside the file src/model/resnet.py.
-- In the config file, enter the path that points the folder that contains the data for the experiment. For PASCAL-5<sup>i</sup>, data_root should be .../data/pascal.
+- In the config file, enter the path that points the folder that contains the data for the experiment. E.g. for PASCAL-5<sup>i</sup>, data_root should be .../data/pascal.
 
-Then, to start training run the command:
+Then, run the command:
  ```bash
  python src/train.py --config {path_to_config_file}
  ```
  
  ## Testing
  To test a model, you need to first do:
-- In the config file, enter the path that points the folder that contains the data for the experiment. For PASCAL-5<sup>i</sup>, data_root should be .../data/pascal.
+- In the config file, enter the path that points the folder that contains the data for the experiment. E.g. for PASCAL-5<sup>i</sup>, data_root should be .../data/pascal.
 -  In the config file, write the path to the checkpoint of the model.
 - (Optional) To do some visualization, change the visualize variable in the config file to be True.
 
-Then, to start testing run the command:
+Then, run the command:
 ```bash
  python src/test.py --config {path_to_config_file}
  ```
