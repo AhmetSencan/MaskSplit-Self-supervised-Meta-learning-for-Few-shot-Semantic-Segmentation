@@ -45,7 +45,7 @@ data
 
 ## Pre-trained Models
 ### Pre-trained Backbones
-To be able to train the models, pretrained backbones are needed, which can be downloaded from: https://drive.google.com/file/d/1iuMAo5cJ27oBdyDkUI0JyGIEH60Ln2zm/view?usp=sharing.
+To be able to train the models, pretrained backbones are needed, which can be downloaded from: https://drive.google.com/drive/folders/1gYzrgP5oxAKBlWrloozXPqbQeZbdYTus?usp=sharing.
 ### Pre-trained Models
 We also provide pretrained models, which are trained with our approach. These can be found at [[PASCAL-5<sup>i</sup>](https://drive.google.com/drive/folders/17OFcRNs1cw5E1Ay2V3TfnOQSMA79EwuO?usp=sharing)].
 ## Training
