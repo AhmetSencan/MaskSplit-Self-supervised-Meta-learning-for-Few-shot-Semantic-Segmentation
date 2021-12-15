@@ -9,7 +9,7 @@ DATA:
   test_name: default
   test_split: default
   train_list: lists/pascal/train_masksplit.txt
-  data_root:   # add path to data
+  data_root:   # add path to data that contains JPEGImages, SegmentationClassAug, saliency_unsupervised_model e.g. {some_path}/data/pascal
   val_list: lists/pascal/val.txt
   workers: 4
   vcrop_range: [-40,40]
